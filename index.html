@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Sistema de Ventas</h1>
+
+        <div id="login" class="form-group">
+            <label for="username">Usuario:</label>
+            <input type="text" id="username" required><br><br>
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" required>
+            <button class="btn" onclick="login()">Iniciar sesión</button>
+        </div>
+
+        <div id="sales" style="display: none;">
+            <div class="form-group">
+                <label for="product">Producto:</label>
+                <select id="product">
+                    <option value="1">Samsung (600,000)</option>
+                    <option value="2">Motorola (500,000)</option>
+                    <option value="3">Huawei (400,000)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <button class="btn" onclick="sell()">Realizar venta</button>
+            </div>
+            <div id="best-seller"></div>
+            <div id="report"></div>
+            <button class="btn" onclick="logout()">Cerrar sesión</button>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
