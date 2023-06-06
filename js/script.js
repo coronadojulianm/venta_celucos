@@ -3,7 +3,8 @@ function login() {
     var password = document.getElementById("password").value;
 
     // Verificar las credenciales (puedes agregar tus propias validaciones aquí)
-    if (username === "julian" && password === "12345") {
+    if ((username == localStorage.getItem("nuevoUser")) && (password == localStorage.getItem("nuevoPass"))) {
+        alert("Bienvenido "+ username)
         // Mostrar la sección de ventas y ocultar el formulario de inicio de sesión
         document.getElementById("login").style.display = "none";
         document.getElementById("sales").style.display = "block";
@@ -12,6 +13,7 @@ function login() {
         showReport();
         showBestSeller();
     } else {
+        alert("Datos invalidos")
         alert("Credenciales incorrectas. Por favor, intenta de nuevo.");
     }
 }

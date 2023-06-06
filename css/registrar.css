@@ -13,23 +13,12 @@ input{
     border: 2px solid rgb(0, 0, 0);
     border-radius: 10px;
 }
-.imagenes{
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-}
-.name-cel{
-    display: flex;
-    justify-content: center;
-    gap: 150px;
-}
 .container {
     max-width: 900px;
     margin: 0 auto;
     background-color: rgb(251, 255, 122);
     padding: 20px;
 }
-
 .form-group {
     margin-bottom: 20px;
 }
@@ -44,7 +33,6 @@ input{
     padding: 5px;
     font-size: 16px;
 }
-
 .btn {
     display: inline-block;
     padding: 10px 20px;
@@ -57,11 +45,4 @@ input{
 
 .btn:hover {
     background-color: #b70000;
-}
-
-#report {
-    margin-top: 20px;
-    border: 1px solid #000000;
-    background-color: rgb(251, 152, 141);
-    padding: 10px;
 }
